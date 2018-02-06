@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="40dp"
+    android:layout_height="40dp">
+
+    <ImageView
+        android:id="@+id/marker_bus_location"
+        app:srcCompat="@drawable/ic_bus"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:textColor="#000"
+        android:text="24"
+        android:id="@+id/marker_text"
+        android:padding="1dp"
+        android:layout_marginTop="3dp"
+        android:layout_gravity="center|top"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+</FrameLayout>

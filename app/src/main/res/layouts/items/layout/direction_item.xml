@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:background="#fff"
+    android:elevation="1dp"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <View
+        android:background="#808080"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"/>
+    <View
+        android:layout_alignParentRight="true"
+        android:background="#808080"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:background="#808080"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#808080"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"/>
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="60dp">
+
+        <FrameLayout
+            android:layout_marginLeft="12dp"
+            android:id="@+id/direction_item_walk_frame"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_margin="12dp"
+                app:srcCompat="@drawable/ic_walking"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <View
+                android:layout_margin="12dp"
+                android:layout_gravity="bottom"
+                android:background="#FF888888"
+                android:layout_width="24dp"
+                android:layout_height="4dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/direction_item_bus_frame"
+            android:layout_toRightOf="@+id/direction_item_walk_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_margin="12dp"
+                app:srcCompat="@drawable/ic_bus"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+
+            <View
+                android:layout_margin="12dp"
+                android:layout_gravity="bottom"
+                android:background="#FF0000FF"
+                android:layout_width="24dp"
+                android:layout_height="4dp"/>
+
+            <TextView
+                android:id="@+id/direction_item_num_bus"
+                android:textColor="#000"
+                android:text="39"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/direction_item_duration"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center"
+        android:text="33 хв"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/direction_item_distance"
+        android:text="3 грн"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/direction_item_duration"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/direction_item_station"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:text="від зупинки Універсам Колос"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

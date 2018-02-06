@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#30303030"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:background="#006DF0"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:textSize="14sp"
+            android:gravity="center|left"
+            android:text="Ваше місцезнаходженя"
+            android:textColor="#fff"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:background="@drawable/direction_tv_bg"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/direction_activity_start_tv"
+            android:layout_marginTop="20dp"
+            android:layout_width="220dp"
+            android:layout_height="26dp" />
+
+        <TextView
+            android:textSize="14sp"
+            android:gravity="center|left"
+            android:hint="Місце призначення"
+            android:textColorHint="#90ffffff"
+            android:textColor="#fff"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:background="@drawable/direction_tv_bg"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/direction_activity_start_tv"
+            android:id="@+id/direction_activity_end_tv"
+            android:layout_marginTop="12dp"
+            android:layout_width="220dp"
+            android:layout_height="26dp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:padding="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            app:srcCompat="@drawable/ic_up_and_down_opposite_double_arrows_side_by_side"
+            android:layout_toRightOf="@+id/direction_activity_start_tv"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:padding="12dp"
+            android:id="@+id/direction_activity_close"
+            android:layout_marginTop="6dp"
+            app:srcCompat="@drawable/ic_arrow_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+
+
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/direction_activity_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

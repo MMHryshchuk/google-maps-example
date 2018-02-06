@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/input_activity_search_ed_tx"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="9dp"
+        android:singleLine="true"
+        android:background="@drawable/edit_text_style"
+        android:textColorHint="#808080"
+        android:hint="@string/autocomplete_hint"
+        android:drawablePadding="9dp"
+        android:textColor="@android:color/primary_text_light" />
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:id="@+id/input_activity_my_pos"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/my_pos_bg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_marginLeft="16dp"
+            app:srcCompat="@drawable/ic_target"
+            android:layout_gravity="center_vertical"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:text="Моє місцезнаходження"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/input_activity_recycler"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
